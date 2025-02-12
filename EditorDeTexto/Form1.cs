@@ -22,6 +22,7 @@ namespace EditorDeTexto
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            archivoGuardado = false;
             if (archivoGuardado == false)
             {
                 if (MessageBox.Show("Desea crear un nuevo documento y descartar este?", "El archivo no ha sido guardado...", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
