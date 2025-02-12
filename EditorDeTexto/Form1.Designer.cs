@@ -43,6 +43,7 @@
             // 
             // MennuEditor
             // 
+            MennuEditor.BackColor = SystemColors.Highlight;
             MennuEditor.ImageScalingSize = new Size(20, 20);
             MennuEditor.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem });
             MennuEditor.Location = new Point(0, 0);
@@ -53,6 +54,7 @@
             // 
             // archivoToolStripMenuItem
             // 
+            archivoToolStripMenuItem.BackColor = SystemColors.GradientActiveCaption;
             archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nuevoToolStripMenuItem, abrirToolStripMenuItem, guardarToolStripMenuItem, guardarComoToolStripMenuItem, salirToolStripMenuItem });
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             archivoToolStripMenuItem.Size = new Size(73, 24);
@@ -60,41 +62,47 @@
             // 
             // nuevoToolStripMenuItem
             // 
+            nuevoToolStripMenuItem.BackColor = Color.SeaShell;
             nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            nuevoToolStripMenuItem.Size = new Size(187, 26);
+            nuevoToolStripMenuItem.Size = new Size(224, 26);
             nuevoToolStripMenuItem.Text = "Nuevo";
             nuevoToolStripMenuItem.Click += nuevoToolStripMenuItem_Click;
             // 
             // abrirToolStripMenuItem
             // 
+            abrirToolStripMenuItem.BackColor = Color.SeaShell;
             abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            abrirToolStripMenuItem.Size = new Size(187, 26);
+            abrirToolStripMenuItem.Size = new Size(224, 26);
             abrirToolStripMenuItem.Text = "Abrir";
             abrirToolStripMenuItem.Click += abrirToolStripMenuItem_Click;
             // 
             // guardarToolStripMenuItem
             // 
+            guardarToolStripMenuItem.BackColor = Color.SeaShell;
             guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            guardarToolStripMenuItem.Size = new Size(187, 26);
+            guardarToolStripMenuItem.Size = new Size(224, 26);
             guardarToolStripMenuItem.Text = "Guardar";
             guardarToolStripMenuItem.Click += guardarToolStripMenuItem_Click;
             // 
             // guardarComoToolStripMenuItem
             // 
+            guardarComoToolStripMenuItem.BackColor = Color.SeaShell;
             guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            guardarComoToolStripMenuItem.Size = new Size(187, 26);
+            guardarComoToolStripMenuItem.Size = new Size(224, 26);
             guardarComoToolStripMenuItem.Text = "Guardar como";
             guardarComoToolStripMenuItem.Click += guardarComoToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
+            salirToolStripMenuItem.BackColor = Color.SeaShell;
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(187, 26);
+            salirToolStripMenuItem.Size = new Size(224, 26);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // rtb
             // 
+            rtb.BackColor = Color.Gainsboro;
             rtb.Location = new Point(0, 31);
             rtb.Name = "rtb";
             rtb.Size = new Size(800, 419);
@@ -114,11 +122,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(MennuEditor);
             Controls.Add(rtb);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Editor de texto";
             MennuEditor.ResumeLayout(false);
             MennuEditor.PerformLayout();
             ResumeLayout(false);
